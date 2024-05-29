@@ -8,150 +8,154 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
     integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-  <div id="head_title">
-    <h1>웹화면 구현 수업의 웹스터디 페이지</h1>
-    <h2><!-- TODO: 자기이름을 써주세요--></h2>
-    <p>
-      안녕하세요!<br />
-      <!-- TODO: 간단한 자기소개를 써주세요(1줄~2줄) -->
-      <br /><br />
-      <!-- FIXME: 폰트어썸에서 3개~5개 정도를 넣어주세요 -->
-      <i class="fa-brands fa-tiktok fa-2xl" style="color: #f20202"></i>
-      <i class="fa-brands fa-facebook fa-beat fa-2xl" style="color: #74c0fc"></i>
-      <i class="fa-brands fa-facebook fa-2xl" style="color: #74c0fc"></i>
-    </p>
+
+  <h1>화면 설계 그리드</h1>
+
+  <div class="grid-layout">
+    <div class="gl-item" id="header">헤더 부분<br>
+      <div id="head_title">
+        <h1>웹화면 구현 수업의 웹스터디 페이지</h1>
+        <p>
+          안녕하세요!          목원대학교 컴퓨터공학과 여상수 교수입니다
+          <br /><br />
+          <!-- FIXME: 폰트어썸에서 3개~5개 정도를 넣어주세요 -->
+          <i class="fa-brands fa-tiktok fa-2xl" style="color: #f20202"></i>
+          <i class="fa-brands fa-facebook fa-beat fa-2xl" style="color: #74c0fc"></i>
+          <i class="fa-brands fa-facebook fa-2xl" style="color: #74c0fc"></i>
+        </p>
+      </div>
+    
+    </div>
+    <div class="gl-item" id="sidebar">사이드바 부분</div>
+    <div class="gl-item" id="content">메인 콘텐츠 부분<br>
+      <h1>flex-container</h1>
+
+      <div class="flex-container">
+        <!-- FIXME: 지금 예제를 대체하는 콘텐츠로, 영화 또는 드라마 콘텐츠 4개 작성 -->
+        <div class="flex-item">
+          <dl>
+            <dt>영화소개 : 듄2</dt>
+            <dd>
+              <a target="_blank" href="https://namu.wiki/w/%EB%93%84:%20%ED%8C%8C%ED%8A%B8%202"><img
+                  src="https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20240207_151%2F1707288437263gBsdd_JPEG%2Fmovie_image.jpg"
+                  alt="" /></a>
+              2024년 2월 28일에 개봉한 드니 빌뇌브 감독의 듄 시리즈 실사영화.
+              2021년 영화 〈듄〉의 속편이다.
+            </dd>
+          </dl>
+        </div>
+        <div class="flex-item">
+          <dl>
+            <dt>영화소개 : 냉정과 열정 사이</dt>
+            <dd>
+              <a target="_blank"
+                href="https://namu.wiki/w/%EB%83%89%EC%A0%95%EA%B3%BC%20%EC%97%B4%EC%A0%95%20%EC%82%AC%EC%9D%B4"><img
+                  src="https://i.namu.wiki/i/nfVqC1FuFaC27Kf6J_wHxE858tdwwFyP_2wZo4qIIB1VxSnOF-PJ7NyHZz9uySo9bz3gc5lr4cJHAuWvT8QsLGh38N-b8ci42Ndh5hUgN7D_-abhZL8ZT35Jz3_dN2d8GAnVvx3RP3eeuSXfX3sxUw.webp"
+                  alt="" /></a><br />
+              2001년에 타케노우치 유타카, 진혜림 주연의 영화로 제작되었다.
+              타다이마 오카에리 엔딩의 전형적인 영화.
+            </dd>
+          </dl>
+        </div>
+    
+        <div class="flex-item">
+          <dl>
+            <dt>넷플릭스 소개: 삼체</dt>
+            <dd>
+              <a target="_blank"
+                href="https://namu.wiki/w/%EC%82%BC%EC%B2%B4%28%EB%AF%B8%EA%B5%AD%20%EB%93%9C%EB%9D%BC%EB%A7%88%29">
+                <img
+                  src="https://i.namu.wiki/i/oX1oa1g4_3hjnOfbeiX1KlJ_pQfzE-BG1ydHvLl_PLAjq-UOOGbF4nL9j7Zq-Duua0zf_Thf__So00aDy_HqLz-9Tu-SKgMY9rj4yGk3rALLHD-VGx5IssQkwwu4v4G2ptTs6uvLoFdQwLGWQoEXGA.webp"
+                  alt="" /></a>
+              “물리학은 존재하지 않는다”라는 유서를 남기고 자살한 동료 과학자
+              '양둥'의 죽음이 석연치 않았던 '왕먀오'는 ...!
+            </dd>
+          </dl>
+        </div>
+        </a>
+        <div class="flex-item" id="f4">
+          <dl>
+            <dt>영화소개 : 범죄도시4</dt>
+            <dd>
+              <a target="_blank" href="https://namu.wiki/w/%EB%B2%94%EC%A3%84%EB%8F%84%EC%8B%9C4"><img
+                  src="https://i.namu.wiki/i/UV5cDIV4GTiR81tpwd8qsWzna_HaavSVxpgjwWoJgV9ydIbARV4-9_1KaBhQT8Esd20jCHUcgD8ZXm8pCJirRTIWeFbXs6xIGHFHDv6ywuWbDTk7X_afpPTjLXOltjfhNUDTSpaelAvhJsEU7wBSFA.webp"
+                  alt="" /></a>
+              2024년 2월 28일에 개봉한 드니 빌뇌브 감독의 듄 시리즈 실사영화.
+              2021년 영화 〈듄〉의 속편이다.
+            </dd>
+          </dl>
+        </div>
+      </div>
+    
+      <h1>grid-container</h1>
+    
+      <div class="grid-container">
+        <!-- FIXME: 지금 예제를 대체하는 콘텐츠로, 영화 또는 드라마 콘텐츠 4개 작성 -->
+        <div class="grid-item">
+          <dl>
+            <dt>영화소개 : 듄2</dt>
+            <dd>
+              <a target="_blank" href="https://namu.wiki/w/%EB%93%84:%20%ED%8C%8C%ED%8A%B8%202"><img
+                  src="https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20240207_151%2F1707288437263gBsdd_JPEG%2Fmovie_image.jpg"
+                  alt="" /></a>
+              2024년 2월 28일에 개봉한 드니 빌뇌브 감독의 듄 시리즈 실사영화.
+              2021년 영화 〈듄〉의 속편이다.
+            </dd>
+          </dl>
+        </div>
+        <div class="grid-item">
+          <dl>
+            <dt>영화소개 : 냉정과 열정 사이</dt>
+            <dd>
+              <a target="_blank"
+                href="https://namu.wiki/w/%EB%83%89%EC%A0%95%EA%B3%BC%20%EC%97%B4%EC%A0%95%20%EC%82%AC%EC%9D%B4"><img
+                  src="https://i.namu.wiki/i/nfVqC1FuFaC27Kf6J_wHxE858tdwwFyP_2wZo4qIIB1VxSnOF-PJ7NyHZz9uySo9bz3gc5lr4cJHAuWvT8QsLGh38N-b8ci42Ndh5hUgN7D_-abhZL8ZT35Jz3_dN2d8GAnVvx3RP3eeuSXfX3sxUw.webp"
+                  alt="" /></a><br />
+              2001년에 타케노우치 유타카, 진혜림 주연의 영화로 제작되었다.
+              타다이마 오카에리 엔딩의 전형적인 영화.
+            </dd>
+          </dl>
+        </div>
+    
+        <div class="grid-item">
+          <dl>
+            <dt>넷플릭스 소개: 삼체</dt>
+            <dd>
+              <a target="_blank"
+                href="https://namu.wiki/w/%EC%82%BC%EC%B2%B4%28%EB%AF%B8%EA%B5%AD%20%EB%93%9C%EB%9D%BC%EB%A7%88%29">
+                <img
+                  src="https://i.namu.wiki/i/oX1oa1g4_3hjnOfbeiX1KlJ_pQfzE-BG1ydHvLl_PLAjq-UOOGbF4nL9j7Zq-Duua0zf_Thf__So00aDy_HqLz-9Tu-SKgMY9rj4yGk3rALLHD-VGx5IssQkwwu4v4G2ptTs6uvLoFdQwLGWQoEXGA.webp"
+                  alt="" /></a>
+              “물리학은 존재하지 않는다”라는 유서를 남기고 자살한 동료 과학자
+              '양둥'의 죽음이 석연치 않았던 '왕먀오'는 ...!
+            </dd>
+          </dl>
+        </div>
+        </a>
+        <div class="grid-item">
+          <dl>
+            <dt>영화소개 : 범죄도시4</dt>
+            <dd>
+              <a target="_blank" href="https://namu.wiki/w/%EB%B2%94%EC%A3%84%EB%8F%84%EC%8B%9C4"><img
+                  src="https://i.namu.wiki/i/UV5cDIV4GTiR81tpwd8qsWzna_HaavSVxpgjwWoJgV9ydIbARV4-9_1KaBhQT8Esd20jCHUcgD8ZXm8pCJirRTIWeFbXs6xIGHFHDv6ywuWbDTk7X_afpPTjLXOltjfhNUDTSpaelAvhJsEU7wBSFA.webp"
+                  alt="" /></a>
+              2024년 2월 28일에 개봉한 드니 빌뇌브 감독의 듄 시리즈 실사영화.
+              2021년 영화 〈듄〉의 속편이다.
+            </dd>
+          </dl>
+        </div>
+      </div>
+    
+    </div>
+    <div class="gl-item" id="footer">풋터 부분</div>
   </div>
-  <hr />
 
-  <h1>애니메이션</h1>
-
-  <!-- TODO: 애니메이션 속성으로 전환 효과 제어하기 p.250 -->
-
-
-  <!-- FIXME: 아래쪽 주석 삭제하기 -->
-  
-  <h1>flex-container</h1>
-
-  <div class="flex-container">
-    <!-- FIXME: 지금 예제를 대체하는 콘텐츠로, 영화 또는 드라마 콘텐츠 4개 작성 -->
-    <div class="flex-item">
-      <dl>
-        <dt>영화소개 : 듄2</dt>
-        <dd>
-          <a target="_blank" href="https://namu.wiki/w/%EB%93%84:%20%ED%8C%8C%ED%8A%B8%202"><img
-              src="https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20240207_151%2F1707288437263gBsdd_JPEG%2Fmovie_image.jpg"
-              alt="" /></a>
-          2024년 2월 28일에 개봉한 드니 빌뇌브 감독의 듄 시리즈 실사영화.
-          2021년 영화 〈듄〉의 속편이다.
-        </dd>
-      </dl>
-    </div>
-    <div class="flex-item">
-      <dl>
-        <dt>영화소개 : 냉정과 열정 사이</dt>
-        <dd>
-          <a target="_blank"
-            href="https://namu.wiki/w/%EB%83%89%EC%A0%95%EA%B3%BC%20%EC%97%B4%EC%A0%95%20%EC%82%AC%EC%9D%B4"><img
-              src="https://i.namu.wiki/i/nfVqC1FuFaC27Kf6J_wHxE858tdwwFyP_2wZo4qIIB1VxSnOF-PJ7NyHZz9uySo9bz3gc5lr4cJHAuWvT8QsLGh38N-b8ci42Ndh5hUgN7D_-abhZL8ZT35Jz3_dN2d8GAnVvx3RP3eeuSXfX3sxUw.webp"
-              alt="" /></a><br />
-          2001년에 타케노우치 유타카, 진혜림 주연의 영화로 제작되었다.
-          타다이마 오카에리 엔딩의 전형적인 영화.
-        </dd>
-      </dl>
-    </div>
-
-    <div class="flex-item">
-      <dl>
-        <dt>넷플릭스 소개: 삼체</dt>
-        <dd>
-          <a target="_blank"
-            href="https://namu.wiki/w/%EC%82%BC%EC%B2%B4%28%EB%AF%B8%EA%B5%AD%20%EB%93%9C%EB%9D%BC%EB%A7%88%29">
-            <img
-              src="https://i.namu.wiki/i/oX1oa1g4_3hjnOfbeiX1KlJ_pQfzE-BG1ydHvLl_PLAjq-UOOGbF4nL9j7Zq-Duua0zf_Thf__So00aDy_HqLz-9Tu-SKgMY9rj4yGk3rALLHD-VGx5IssQkwwu4v4G2ptTs6uvLoFdQwLGWQoEXGA.webp"
-              alt="" /></a>
-          “물리학은 존재하지 않는다”라는 유서를 남기고 자살한 동료 과학자
-          '양둥'의 죽음이 석연치 않았던 '왕먀오'는 ...!
-        </dd>
-      </dl>
-    </div>
-    </a>
-    <div class="flex-item">
-      <dl>
-        <dt>영화소개 : 범죄도시4</dt>
-        <dd>
-          <a target="_blank" href="https://namu.wiki/w/%EB%B2%94%EC%A3%84%EB%8F%84%EC%8B%9C4"><img
-              src="https://i.namu.wiki/i/UV5cDIV4GTiR81tpwd8qsWzna_HaavSVxpgjwWoJgV9ydIbARV4-9_1KaBhQT8Esd20jCHUcgD8ZXm8pCJirRTIWeFbXs6xIGHFHDv6ywuWbDTk7X_afpPTjLXOltjfhNUDTSpaelAvhJsEU7wBSFA.webp"
-              alt="" /></a>
-          2024년 2월 28일에 개봉한 드니 빌뇌브 감독의 듄 시리즈 실사영화.
-          2021년 영화 〈듄〉의 속편이다.
-        </dd>
-      </dl>
-    </div>
-  </div>
-
-  <h1>grid-container</h1>
-
-  <div class="grid-container">
-    <!-- FIXME: 지금 예제를 대체하는 콘텐츠로, 영화 또는 드라마 콘텐츠 4개 작성 -->
-    <div class="grid-item">
-      <dl>
-        <dt>영화소개 : 듄2</dt>
-        <dd>
-          <a target="_blank" href="https://namu.wiki/w/%EB%93%84:%20%ED%8C%8C%ED%8A%B8%202"><img
-              src="https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20240207_151%2F1707288437263gBsdd_JPEG%2Fmovie_image.jpg"
-              alt="" /></a>
-          2024년 2월 28일에 개봉한 드니 빌뇌브 감독의 듄 시리즈 실사영화.
-          2021년 영화 〈듄〉의 속편이다.
-        </dd>
-      </dl>
-    </div>
-    <div class="grid-item">
-      <dl>
-        <dt>영화소개 : 냉정과 열정 사이</dt>
-        <dd>
-          <a target="_blank"
-            href="https://namu.wiki/w/%EB%83%89%EC%A0%95%EA%B3%BC%20%EC%97%B4%EC%A0%95%20%EC%82%AC%EC%9D%B4"><img
-              src="https://i.namu.wiki/i/nfVqC1FuFaC27Kf6J_wHxE858tdwwFyP_2wZo4qIIB1VxSnOF-PJ7NyHZz9uySo9bz3gc5lr4cJHAuWvT8QsLGh38N-b8ci42Ndh5hUgN7D_-abhZL8ZT35Jz3_dN2d8GAnVvx3RP3eeuSXfX3sxUw.webp"
-              alt="" /></a><br />
-          2001년에 타케노우치 유타카, 진혜림 주연의 영화로 제작되었다.
-          타다이마 오카에리 엔딩의 전형적인 영화.
-        </dd>
-      </dl>
-    </div>
-
-    <div class="grid-item">
-      <dl>
-        <dt>넷플릭스 소개: 삼체</dt>
-        <dd>
-          <a target="_blank"
-            href="https://namu.wiki/w/%EC%82%BC%EC%B2%B4%28%EB%AF%B8%EA%B5%AD%20%EB%93%9C%EB%9D%BC%EB%A7%88%29">
-            <img
-              src="https://i.namu.wiki/i/oX1oa1g4_3hjnOfbeiX1KlJ_pQfzE-BG1ydHvLl_PLAjq-UOOGbF4nL9j7Zq-Duua0zf_Thf__So00aDy_HqLz-9Tu-SKgMY9rj4yGk3rALLHD-VGx5IssQkwwu4v4G2ptTs6uvLoFdQwLGWQoEXGA.webp"
-              alt="" /></a>
-          “물리학은 존재하지 않는다”라는 유서를 남기고 자살한 동료 과학자
-          '양둥'의 죽음이 석연치 않았던 '왕먀오'는 ...!
-        </dd>
-      </dl>
-    </div>
-    </a>
-    <div class="grid-item">
-      <dl>
-        <dt>영화소개 : 범죄도시4</dt>
-        <dd>
-          <a target="_blank" href="https://namu.wiki/w/%EB%B2%94%EC%A3%84%EB%8F%84%EC%8B%9C4"><img
-              src="https://i.namu.wiki/i/UV5cDIV4GTiR81tpwd8qsWzna_HaavSVxpgjwWoJgV9ydIbARV4-9_1KaBhQT8Esd20jCHUcgD8ZXm8pCJirRTIWeFbXs6xIGHFHDv6ywuWbDTk7X_afpPTjLXOltjfhNUDTSpaelAvhJsEU7wBSFA.webp"
-              alt="" /></a>
-          2024년 2월 28일에 개봉한 드니 빌뇌브 감독의 듄 시리즈 실사영화.
-          2021년 영화 〈듄〉의 속편이다.
-        </dd>
-      </dl>
-    </div>
-  </div>
-
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
