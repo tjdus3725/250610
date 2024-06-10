@@ -1,8 +1,8 @@
-const box = document.querySelector("div#ani3");
+const box = document.querySelector("div#box-ani");
 
 document.querySelector("#start").addEventListener("click", function () {
     box.style.animationPlayState = "running";
 });
-document.querySelector("#paused").addEventListener("click", function () {
+document.querySelector("#pause").addEventListener("click", function () {
     box.style.animationPlayState = "paused";
-})
+});
